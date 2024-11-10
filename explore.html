@@ -48,57 +48,30 @@
             z-index: -1;
         }
 
-        /* Navigation menu styles */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 10;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.25rem;
-            padding: 10px 15px;
-            transition: color 0.3s ease;
-        }
-
-        .navbar a:hover {
-            color: #ff4500;
-        }
-
         /* Movie container styling */
         .movies-container {
             display: flex;
             flex-wrap: nowrap;
             overflow-x: scroll;
-            padding: 100px 20px 20px; /* space for navbar */
+            padding: 60px 20px 20px; /* space for bottom bar */
         }
 
         /* Movie thumbnail styles */
         .movie {
-            width: 180px;
+            width: 250px;  /* Increased width */
+            height: 375px; /* Increased height */
             margin-right: 20px;
             background-color: #333;
-            border-radius: 8px;
+            border-radius: 25px;  /* Increased border-radius for more rounded corners */
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, border 0.3s ease;
         }
 
         .movie img {
             width: 100%;
-            height: auto;
-        }
-
-        .movie:hover {
-            transform: scale(1.1);
+            height: 100%; /* Ensure the image fills the container */
+            object-fit: cover; /* Cover the area without stretching */
         }
 
         .movie-title {
@@ -109,53 +82,56 @@
             background-color: #000;
         }
 
+        /* Movie hover effect with thicker red outline */
+        .movie:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            border: 12px solid red;  /* Increased red outline (4x thicker) */
+        }
+
         /* Footer */
         footer {
-            margin-top: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
             font-size: 0.875rem;
             text-align: center;
             color: #ccc;
+            background-color: #111;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="#">Genres</a>
-        <a href="#">Trending</a>
-        <a href="#">Account</a>
-    </div>
-
     <!-- Movie Carousel -->
     <div class="movies-container">
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 1">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 1">
             <div class="movie-title">Movie 1</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 2">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 2">
             <div class="movie-title">Movie 2</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 3">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 3">
             <div class="movie-title">Movie 3</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 4">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 4">
             <div class="movie-title">Movie 4</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 5">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 5">
             <div class="movie-title">Movie 5</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 6">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 6">
             <div class="movie-title">Movie 6</div>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>&copy; 2024 GorillaFlix. All rights reserved.</footer>
 
 </body>
