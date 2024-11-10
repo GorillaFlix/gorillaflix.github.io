@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to GorillaFlix</title>
+    <title>GorillaFlix</title>
+    
+    <!-- Favicon Links -->
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- for older browsers -->
+
+    <!-- Apple Touch Icon (for iOS devices) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Android and other devices -->
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+
+    <!-- Font Link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    
     <style>
-        /* Reset and basic styles */
+        /* Basic and layout styles */
         * {
             margin: 0;
             padding: 0;
@@ -23,7 +39,7 @@
             color: #fff;
             overflow: hidden;
         }
-        /* Apply blur effect to the background */
+        /* Background blur */
         body::before {
             content: "";
             position: absolute;
@@ -68,7 +84,7 @@
             background-color: #ff4500;
             color: #fff;
             text-decoration: none;
-            border: none; /* No border-radius for sharper edges */
+            border: none; /* Sharp corners */
             transition: background-color 0.3s ease;
         }
         a:hover {
