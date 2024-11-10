@@ -58,7 +58,8 @@
 
         /* Movie thumbnail styles */
         .movie {
-            width: 180px;
+            width: 250px;  /* Increased width */
+            height: 375px; /* Increased height */
             margin-right: 20px;
             background-color: #333;
             border-radius: 12px;  /* Rounded corners */
@@ -69,7 +70,8 @@
 
         .movie img {
             width: 100%;
-            height: auto;
+            height: 100%; /* Ensure the image fills the container */
+            object-fit: cover; /* Cover the area without stretching */
         }
 
         .movie-title {
@@ -80,10 +82,10 @@
             background-color: #000;
         }
 
-        /* Movie hover effect */
+        /* Movie hover effect with red outline */
         .movie:hover {
-            transform: scale(1.05);
-            border: 3px solid red; /* Red outline on hover */
+            transform: scale(1.05); /* Slight zoom on hover */
+            border: 3px solid red;  /* Red outline on hover */
         }
 
         /* Footer */
@@ -104,27 +106,27 @@
     <!-- Movie Carousel -->
     <div class="movies-container">
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 1">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 1">
             <div class="movie-title">Movie 1</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 2">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 2">
             <div class="movie-title">Movie 2</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 3">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 3">
             <div class="movie-title">Movie 3</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 4">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 4">
             <div class="movie-title">Movie 4</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 5">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 5">
             <div class="movie-title">Movie 5</div>
         </div>
         <div class="movie">
-            <img src="https://via.placeholder.com/180x250" alt="Movie 6">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 6">
             <div class="movie-title">Movie 6</div>
         </div>
     </div>
