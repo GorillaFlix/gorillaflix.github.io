@@ -26,13 +26,22 @@
             font-family: 'Roboto', sans-serif;
         }
 
+        /* Set body and html to full height */
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
         /* Background styling */
         body {
             background: url('https://preview.redd.it/some-pictures-i-took-in-forest-i-really-like-the-fire-pit-v0-iiqkyobnxzhb1.jpg?width=1080&crop=smart&auto=webp&s=66d52b427c4e9d7057ee714340122b4ce77a8454') no-repeat center center fixed;
             background-size: cover;
             color: #fff;
-            height: 100vh;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
+            overflow-y: auto;
             position: relative;
         }
 
@@ -51,19 +60,21 @@
         /* Movie container styling */
         .movies-container {
             display: flex;
-            flex-wrap: nowrap;
-            overflow-x: scroll;
-            padding: 60px 20px 0; /* Space for bottom bar */
-            margin-bottom: 0; /* Ensure no extra space at the bottom */
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding: 20px;
+            z-index: 1;
+            margin-top: 60px; /* Space for header if needed */
         }
 
         /* Movie thumbnail styles */
         .movie {
-            width: 250px;  /* Increased width */
-            height: 375px; /* Increased height */
+            width: 250px;  /* Width for thumbnails */
+            height: 375px; /* Height for thumbnails */
             margin-right: 20px;
+            margin-bottom: 20px; /* Space between rows */
             background-color: #333;
-            border-radius: 25px;  /* Increased border-radius for more rounded corners */
+            border-radius: 25px;  /* Rounded corners */
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease, border 0.3s ease;
@@ -106,29 +117,56 @@
 
     <!-- Movie Carousel -->
     <div class="movies-container">
+        <!-- Movie 1 -->
         <div class="movie">
             <img src="https://via.placeholder.com/250x375" alt="Movie 1">
             <div class="movie-title">Movie 1</div>
         </div>
+        <!-- Movie 2 -->
         <div class="movie">
             <img src="https://via.placeholder.com/250x375" alt="Movie 2">
             <div class="movie-title">Movie 2</div>
         </div>
+        <!-- Movie 3 -->
         <div class="movie">
             <img src="https://via.placeholder.com/250x375" alt="Movie 3">
             <div class="movie-title">Movie 3</div>
         </div>
+        <!-- Movie 4 -->
         <div class="movie">
             <img src="https://via.placeholder.com/250x375" alt="Movie 4">
             <div class="movie-title">Movie 4</div>
         </div>
+        <!-- Movie 5 -->
         <div class="movie">
             <img src="https://via.placeholder.com/250x375" alt="Movie 5">
             <div class="movie-title">Movie 5</div>
         </div>
+        <!-- Movie 6 -->
         <div class="movie">
             <img src="https://via.placeholder.com/250x375" alt="Movie 6">
             <div class="movie-title">Movie 6</div>
+        </div>
+        <!-- Add more movies as needed -->
+        <!-- Movie 7 -->
+        <div class="movie">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 7">
+            <div class="movie-title">Movie 7</div>
+        </div>
+        <!-- Movie 8 -->
+        <div class="movie">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 8">
+            <div class="movie-title">Movie 8</div>
+        </div>
+        <!-- Movie 9 -->
+        <div class="movie">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 9">
+            <div class="movie-title">Movie 9</div>
+        </div>
+        <!-- Movie 10 -->
+        <div class="movie">
+            <img src="https://via.placeholder.com/250x375" alt="Movie 10">
+            <div class="movie-title">Movie 10</div>
         </div>
     </div>
 
